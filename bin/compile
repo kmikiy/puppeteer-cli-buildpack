@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir>
+
+echo "-----> Installing puppeteer-cli"
+git clone https://github.com/kmikiy/puppeteer-cli
+cd puppeteer-cli
+npm i
+npm install -g

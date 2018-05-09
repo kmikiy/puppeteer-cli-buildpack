@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "puppeteer-cli-buildpack"
+exit 0
