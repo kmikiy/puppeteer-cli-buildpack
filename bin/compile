@@ -26,7 +26,7 @@ curl --silent --retry 5 --retry-max-time 15 'https://lang-common.s3.amazonaws.co
 source "$STDLIB_FILE"
 source $BP_DIR/lib/output.sh
 source $BP_DIR/lib/json.sh
-### source $BP_DIR/lib/failure.sh
+source $BP_DIR/lib/failure.sh
 source $BP_DIR/lib/environment.sh
 source $BP_DIR/lib/binaries.sh
 source $BP_DIR/lib/cache.sh
@@ -65,7 +65,6 @@ trap 'handle_failure' ERR
 
 fail_dot_heroku "$BUILD_DIR"
 fail_dot_heroku_node "$BUILD_DIR"
-fail_invalid_package_json "$BUILD_DIR"
 fail_multiple_lockfiles "$BUILD_DIR"
 warn_prebuilt_modules "$BUILD_DIR"
 warn_missing_package_json "$BUILD_DIR"
