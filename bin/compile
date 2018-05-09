@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
+echo "-----> Installing node js"
+apt-get update
+apt-get install nodejs
+apt-get install npm
+
+
 echo "-----> Installing puppeteer-cli"
 git clone https://github.com/kmikiy/puppeteer-cli
 cd puppeteer-cli
