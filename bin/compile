@@ -26,7 +26,7 @@ curl --silent --retry 5 --retry-max-time 15 'https://lang-common.s3.amazonaws.co
 source "$STDLIB_FILE"
 source $BP_DIR/lib/output.sh
 source $BP_DIR/lib/json.sh
-source $BP_DIR/lib/failure.sh
+### source $BP_DIR/lib/failure.sh
 source $BP_DIR/lib/environment.sh
 source $BP_DIR/lib/binaries.sh
 source $BP_DIR/lib/cache.sh
